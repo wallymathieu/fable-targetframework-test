@@ -1,0 +1,13 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup Condition="'$(TargetFramework)' == 'fable3'">
+        <TargetFrameworkVersion>2.0</TargetFrameworkVersion>
+        <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+        <CopyLocalRuntimeTargetAssets Condition="'$(CopyLocalRuntimeTargetAssets)' == ''">true</CopyLocalRuntimeTargetAssets>
+        <CopyLocalLockFileAssemblies Condition="'$(CopyLocalLockFileAssemblies)' == ''">false</CopyLocalLockFileAssemblies>
+        <EnableFrameworkPathOverride Condition="'$(EnableFrameworkPathOverride)' == ''">false</EnableFrameworkPathOverride>
+        <AutoUnifyAssemblyReferences>true</AutoUnifyAssemblyReferences>
+        <DisableStandardFrameworkResolution>true</DisableStandardFrameworkResolution>
+        <GenerateDependencyFile Condition=" '$(GenerateDependencyFile)' == '' ">true</GenerateDependencyFile>
+        <IncludeFileVersionsInDependencyFile Condition="'$(IncludeFileVersionsInDependencyFile)' == ''">true</IncludeFileVersionsInDependencyFile>
+    </PropertyGroup>
+</Project>
